@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <meta charset="utf-8">
+  <title>Truth Table Generator</title>
+
+  <meta name="author" content="Vincent Edwards">
+  <meta name="description"
+    content="Given a set of variables and a logical expression, the site should generate the corresponding truth table.">
+
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <header>
+    <h1>Truth Table Generator</h1>
+  </header>
+  <main>
+    <p>Given a set of variables and a logical expression, the site should generate its corresponding truth table.
+    </p>
+    <hr>
+
+    <section id="variable-input-section">
+      <p>Input the variables you would like to use in your expressions. Variables must be single uppercase
+        letters. Click "Continue" when you are done setting all the variables.</p>
+      <form id="variable-form">
+        <input id="letter-input" type="text" pattern="[ABCDEFGHIJKLMNOPQRSTUVWXYZ]" maxlength="1" minlength="1"
+          title="Input must be a unique uppercase letter" size="2" autocomplete="off" required>
+        <input id="letter-submit-button" type="submit">
+      </form>
+      <ul id="variable-list">
+      </ul>
+      <button id="continue-button">Continue</button>
+    </section>
+
+    <section id="expression-input-section" hidden>
+      <hr id="continue-line">
+      <p>Enter the expression you would like to add to the truth table.<br>
+        To help with typing in operators, n → ∼ (not), a → • (and), o → ∨ (or), i → ⊃ (implies), and e → ≡
+        (equal).<br>
+        In addition, t → 𝑡 (true) and f → 𝑓 (false).</p>
+      <form id="expression-form" autocomplete="off">
+        <input id="expression-input" type="text" required>
+        <input id="expression-submit-button" type="submit">
+      </form>
+    </section>
+    <br>
+    <table id="truth-table" hidden></table>
+    <br>
+    <hr>
+    <label for="remove-item-checkbox"><input id="remove-item-checkbox" type="checkbox"> Remove Items</label>
+    <p id="remove-item-instructions"></p>
+  </main>
+</body>
+
+</html>

@@ -1,0 +1,57 @@
+table {
+  border-collapse: collapse;
+  text-align: center;
+}
+
+table,
+td,
+th {
+  border: 1px solid black;
+  padding: 5px;
+}
+
+tr:hover {
+  background-color: yellow;
+}
+
+ul {
+  width: fit-content;
+}
+
+li {
+  padding: 4px;
+}
+
+#remove-item-instructions {
+  size: 0.8em;
+}
+
+.top-th {
+  background-color: #8cc8ff;
+  border-bottom-width: 2px;
+}
+
+.least-significant-letter {
+  border-right-width: 2px;
+}
+
+.true-cell {
+  color: green;
+}
+
+.false-cell {
+  color: red;
+}
+
+.light-grey-background {
+  background-color: #efeff0;
+}
+
+.dark-grey-background {
+  background-color: #7c88a3;
+}
+
+.delete-indicator:hover {
+  background-color: #e94e4e;
+  cursor: crosshair;
+}
